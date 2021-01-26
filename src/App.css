@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+.search-key-chip {
+  margin-right: 0.5rem;
+  border-radius: 0;
+  background: #e8f5ff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-bar-input-outer {
+  overflow: auto;
+  padding: 0.5rem 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-bar-container {
+  border: 4px solid #f5f5f5;
+  border-radius: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-bar-input {
+  min-width: 100%;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+/* Suggestive list */
+.suggest-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.suggest-list-nav {
+  padding: 0;
+  height: 200px;
+  overflow: auto;
+  background: white;
+}
+
+.suggest-list-item {
+  background: #e8f5ff;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+/* City List View */
+.grid-view-container {
+  margin-top: 1rem;
+}
+
+.grid-city-view {
+  background-color: #f2f2f2;
+  height: 300px;
+}
+
+.grid-activity-view {
+  background-color: #f2f2f2;
+  height: 300px;
+  overflow: auto;
+}
+
+/* Scroll Style */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c5c5c5;
 }
